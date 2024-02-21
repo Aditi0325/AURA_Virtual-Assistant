@@ -3,7 +3,7 @@ from functions.online_ops import find_my_ip, get_latest_news, get_random_advice,
 from functions.os_ops import open_calculator, open_camera, open_cmd, open_notepad, open_edge, open_clean_manager, open_control_panel, open_game_panel
 from pprint import pprint
 from AURA import wish_user, user_input, speak
-from datetime import datetime
+import datetime
 
 
 if __name__ == '__main__':
@@ -110,6 +110,6 @@ if __name__ == '__main__':
             print(f"Description: {weather}\nTemperature: {temperature}\nFeels like: {feels_like}")
 
         if 'time' in query:
-            strTime = datetime.datetime.now().strftime("%H:%M:%S")
-            speak(f"Buddy, the time is {strTime}")
+            strTime = datetime.now().strftime("%H:%M:%S")
+            speak(f"Dude, the time is {strTime}")
             print(strTime)
