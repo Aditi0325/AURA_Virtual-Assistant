@@ -5,7 +5,7 @@ paths = {
     'notepad': "C:\Windows\System32\notepad.exe",
     'calculator': "C:\Windows\System32\calc.exe",
    # 'command_prompt': "C:\Windows\System32\cmd.exe",
-    'edge': "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+    'edge': "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
     'clean_manager': "C:\Windows\System32\cleanmgr.exe",
     'control_panel': "C:\Windows\System32\control.exe",
     'Game_Panel': "C:\Windows\System32\GamePanel.exe"
@@ -25,7 +25,7 @@ def open_calculator():
 
 def open_edge():
     sp.Popen(paths['edge'])
-
+    
 def open_clean_manager():
     sp.Popen(paths['clean_manager'])
 
